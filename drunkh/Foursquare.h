@@ -156,8 +156,8 @@
 
 
 
-//@protocol Foursquare
-//@end
+@protocol Foursquare
+@end
 
 @interface Foursquare : JSONModel
 

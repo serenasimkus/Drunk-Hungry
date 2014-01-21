@@ -88,6 +88,7 @@
 		0465331E17F7B5270063D11C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0465332017F7B5270063D11C /* drunkhTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drunkhTests.m; sourceTree = "<group>"; };
 		046534B117F854770063D11C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		047E49FC188EE89100111BF9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +199,7 @@
 		046532F417F7B5270063D11C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				047E49FC188EE89100111BF9 /* AdSupport.framework */,
 				046534B117F854770063D11C /* CoreLocation.framework */,
 				046532F517F7B5270063D11C /* Foundation.framework */,
 				046532F717F7B5270063D11C /* CoreGraphics.framework */,
@@ -491,6 +493,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "drunkh/drunkh-Prefix.pch";
 				INFOPLIST_FILE = "drunkh/drunkh-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/serena/Desktop/drunk/drunkh,
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -508,6 +515,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "drunkh/drunkh-Prefix.pch";
 				INFOPLIST_FILE = "drunkh/drunkh-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/serena/Desktop/drunk/drunkh,
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

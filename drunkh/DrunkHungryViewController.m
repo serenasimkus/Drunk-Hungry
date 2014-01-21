@@ -89,7 +89,6 @@ CLLocationManager *locationManager;
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsondata options:NSJSONReadingMutableContainers error:&e];
         
         api = [[Foursquare alloc] initWithDictionary:json error:&e];
-//        NSLog(@"%@", api);
         
         NSURL *url = [NSURL URLWithString:[[[[[[[[[api.response.groups[0] valueForKey:@"items"] objectAtIndex: i] valueForKey:@"venue"] valueForKey:@"photos"] valueForKey:@"groups"] valueForKey:@"items"] valueForKey:@"url"] objectAtIndex: 0] objectAtIndex: 0]];
 
